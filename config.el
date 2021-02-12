@@ -64,7 +64,6 @@
 ;; pre-use-packages
 (use-package teppoudo-diminish)
 (use-package teppoudo-editing)
-(use-package teppoudo-packages)
 
 ;; Config files
 (load! "./config/common-config.el")

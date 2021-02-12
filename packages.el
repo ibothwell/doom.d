@@ -41,9 +41,6 @@
 (package! teppoudo-editing
   :recipe (:host github :repo "sandhu/emacs.d"
            :files ("lisp/teppoudo-editing.el")))
-(package! teppoudo-packages
-  :recipe (:host github :repo "sandhu/emacs.d"
-           :files ("lisp/teppoudo-packages.el")))
 (package! teppoudo-search
   :recipe (:host github :repo "sandhu/emacs.d"
            :files ("lisp/teppoudo-search.el")))

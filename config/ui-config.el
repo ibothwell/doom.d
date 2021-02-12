@@ -9,9 +9,9 @@
   (add-hook 'auto-save-hook 'my-desktop-save))
 
 (diminish 'auto-fill-function "")
-(after 'abbrev (diminish 'abbrev-mode " ⠤"))
-(after 'hideshow (diminish 'hs-minor-mode ""))
-(after 'yasnippet (diminish 'yas-minor-mode " ʏ"))
+(with-eval-after-load 'abbrev (diminish 'abbrev-mode " ⠤"))
+(with-eval-after-load 'hideshow (diminish 'hs-minor-mode ""))
+(with-eval-after-load 'yasnippet (diminish 'yas-minor-mode " ʏ"))
 
 (use-package string-utils :ensure t)
 (use-package dash :ensure t)
