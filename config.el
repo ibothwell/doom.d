@@ -21,11 +21,12 @@
 ;; font string. You generally only need these two:
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
+(setq-default line-spacing .4)
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-solarized-light)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -53,8 +54,6 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; Theme
-(setq doom-theme 'doom-solarized-light)
 (require 'which-key)
 (which-key-mode)
 (which-key-setup-side-window-right)
@@ -65,7 +64,6 @@
 ;; pre-use-packages
 (use-package teppoudo-diminish)
 (use-package teppoudo-editing)
-(use-package teppoudo-packages)
 
 ;; Config files
 (load! "./config/common-config.el")

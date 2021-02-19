@@ -21,7 +21,7 @@
                                       (override-slime-repl-bindings-with-paredit)))
     (add-hook 'lisp-mode-hook 'slime-mode)
 
-    (after 'slime
+    (with-eval-after-load 'slime
       (setq slime-complete-symbol-function 'slime-fuzzy-complete-symbol
             slime-fuzzy-completion-in-place t
             slime-enable-evaluate-in-emacs t
@@ -64,4 +64,4 @@
     (define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)))
 
 
-(after 'slime '(diminish 'slime-mode " π")) ; σ
+(with-eval-after-load 'slime '(diminish 'slime-mode " π")) ; σ
