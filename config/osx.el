@@ -22,5 +22,5 @@
         trash-directory "~/.Trash/emacs")
 
   ;; Use aspell for spell checking: brew install aspell --lang=en
-  (setq ispell-program-name "/opt/homebrew/bin/aspell" ; use aspell instead of ispell
+  (setq ispell-program-name "/usr/local/bin/aspell" ; use aspell instead of ispell
         ispell-extra-args '("--sug-mode=ultra")))
