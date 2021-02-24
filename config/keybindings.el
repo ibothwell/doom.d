@@ -12,3 +12,7 @@
 
 (use-package beginend :ensure t
   :config (beginend-setup-all))
+
+;; Search
+;; Symbol lookup
+(bind-key "C-c TAB" 'counsel-imenu)
