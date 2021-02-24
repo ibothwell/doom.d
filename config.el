@@ -68,6 +68,7 @@
 ;; Config files
 (load! "./config/common-config.el")
 (load! "./config/osx.el")
+(load! "./config/ido-config.el")
 (load! "./config/ui-config.el")
 (load! "./config/editing.el")
 (load! "./config/indent-config.el")
