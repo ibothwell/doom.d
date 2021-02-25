@@ -16,3 +16,6 @@
 ;; Search
 ;; Symbol lookup
 (bind-key "C-c TAB" 'counsel-imenu)
+;; swap search key assignment
+(bind-key "C-S" 'isearch-forward)
+(bind-key "C-s" 'counsel-grep-or-swiper)
