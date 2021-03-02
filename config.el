@@ -74,6 +74,7 @@
 (load! "./config/file-navigation.el")
 (load! "./config/keybindings.el")
 (load! "./config/buffer-window-config.el")
+(load! "./config/completion.el")
 (load! "./config/prog-config.el")
 (load! "./config/lisp-config.el")
 (load! "./config/clojure-config.el")
