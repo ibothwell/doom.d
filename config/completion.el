@@ -5,3 +5,6 @@
               company-tooltip-flip-when-above t)
   :config (global-company-mode 1)
   :diminish " α")
+
+(use-package company-quickhelp :ensure t
+  :config (company-quickhelp-mode 1))

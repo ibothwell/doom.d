@@ -21,6 +21,7 @@
 (package! browse-kill-ring)
 (package! smartscan)
 (package! ibuffer-vc)
+(package! company-quickhelp)
 
 
 ;; To install a package directly from a remote git repo, you must specify a

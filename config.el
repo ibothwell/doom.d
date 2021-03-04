@@ -68,14 +68,19 @@
 ;; Config files
 (load! "./config/common-config.el")
 (load! "./config/osx.el")
-(load! "./config/ui-config.el")
-(load! "./config/editing.el")
-(load! "./config/indent-config.el")
-(load! "./config/file-navigation.el")
 (load! "./config/keybindings.el")
+(load! "./config/editing.el")
+(load! "./config/file-navigation.el")
+(load! "./config/ui-config.el")
 (load! "./config/buffer-window-config.el")
-(load! "./config/completion.el")
+(load! "./config/indent-config.el")
 (load! "./config/prog-config.el")
 (load! "./config/lisp-config.el")
+(load! "./config/completion.el")
 (load! "./config/clojure-config.el")
 (load! "./config/slime-config.el")
+
+;; to install Cloure-LSP
+;; brew install clojure-lsp/brew/clojure-lsp-native
+(after! lsp-mode
+  (setq lsp-ui-sideline-show-code-actions nil))
