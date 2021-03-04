@@ -83,4 +83,5 @@
 ;; to install Cloure-LSP
 ;; brew install clojure-lsp/brew/clojure-lsp-native
 (after! lsp-mode
-  (setq lsp-ui-sideline-show-code-actions nil))
+  (setq lsp-ui-sideline-show-code-actions nil)
+  (map! "C-i" 'lsp-format-region))
