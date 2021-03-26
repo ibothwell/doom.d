@@ -19,3 +19,8 @@
 ;; swap search key assignment
 (bind-key "C-S" 'isearch-forward)
 (bind-key "C-s" 'counsel-grep-or-swiper)
+
+
+;;navigation
+(bind-key "M-a" 'beginning-of-defun)
+(bind-key "M-e" 'end-of-defun)
