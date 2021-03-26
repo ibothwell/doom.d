@@ -22,6 +22,7 @@
 (package! smartscan)
 (package! ibuffer-vc)
 (package! company-quickhelp)
+(package! aggressive-indent)
 
 
 ;; To install a package directly from a remote git repo, you must specify a
